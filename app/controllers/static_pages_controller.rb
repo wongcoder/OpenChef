@@ -10,4 +10,7 @@ class StaticPagesController < ApplicationController
 
   def eat
   end
+
+  def about
+  end
 end
