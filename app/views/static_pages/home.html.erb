@@ -1,0 +1,16 @@
+<%
+def welcomeLanguages()
+    languageArrays = ["Welcome.", "ようこそ", "환영"]
+    languageSelect = rand(2)
+    welcomeString = languageArrays[languageSelect]
+  return welcomeString
+end
+# Welcome in a different language
+
+titleMessage = welcomeString
+provide(:location, titleMessage)
+%>
+
+<h1>OpenChef</h1>
+Username:
+Password:
