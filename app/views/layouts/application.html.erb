@@ -12,6 +12,22 @@
   </head>
 
   <body>
+    <% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %> alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <%= value %>
+    </div>
+    <% end %>
+
+    <%= link_to 'Login', new_user_session_path %>
+    <!-- Use routes to put link to login on master layout -->
+    <!-- we used the first column of the routes "new_user_session"
+    that points to the URL "localhost:3000/users/sign_in"
+    and that goes to the devise/sessions controller to "new" action -->
+
+    <!-- <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p> -->
+
     <%= yield %>
   </body>
 </html>
