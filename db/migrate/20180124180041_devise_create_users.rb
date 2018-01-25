@@ -1,4 +1,9 @@
 # frozen_string_literal: true
+#Think of this file as an instruction for our Application
+#to make changes to the database
+#CAUTION: sometimes, migrations are generated without the *.rb
+# -> add .rb to end if it is not present
+
 
 class DeviseCreateUsers < ActiveRecord::Migration[5.1]
   def change
