@@ -15,13 +15,7 @@ class RestaurantTest < ActiveSupport::TestCase
     @restaurant = Restaurant.create(name: "Shanghai Express", location: "I should probably change this to address.", rating: 5, contactPhone: "602-316-4873", imageDirectory: "images/Shanghai")
   end
 
-  test "if user is valid" do
+  test "if restaurant is valid" do
     assert @restaurant.valid?
   end
-
-  test "name is present" do
-    @restaurant.name = ""
-    assert_not @restaurant.valid?
-  end
-
 end
