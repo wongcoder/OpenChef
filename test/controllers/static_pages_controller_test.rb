@@ -6,11 +6,6 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get accounts" do
-    get static_pages_accounts_url
-    assert_response :success
-  end
-
   test "should get restaurants" do
     get static_pages_restaurants_url
     assert_response :success
@@ -20,5 +15,4 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     get static_pages_eat_url
     assert_response :success
   end
-
 end
