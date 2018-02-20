@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  
   get 'restaurants/new'
 
-   get 'static_pages/home'
+  get 'static_pages/home'
 
   get 'static_pages/accounts'
 
