@@ -1,12 +1,4 @@
 <%
-def welcomeLanguages()
-    languageArrays = ["Welcome.", "ようこそ", "환영"]
-    languageSelect = rand(3)
-    welcomeString = languageArrays[languageSelect]
-  return welcomeString
-end
-# Welcome in a different language
-
 titleMessage = welcomeLanguages()
 provide(:location, titleMessage)
 %>
