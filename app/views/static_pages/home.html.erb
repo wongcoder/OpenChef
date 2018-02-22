@@ -7,7 +7,7 @@ def welcomeLanguages()
 end
 # Welcome in a different language
 
-titleMessage = welcomeString
+titleMessage = welcomeLanguages()
 provide(:location, titleMessage)
 %>
 
@@ -15,4 +15,3 @@ provide(:location, titleMessage)
 This page should eventually be filled
 
 Attached below is a link to sign up:
-<%= link_to "Sign up, pussy", signup_path %>
