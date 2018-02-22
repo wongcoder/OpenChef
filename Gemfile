@@ -29,13 +29,12 @@ gem 'devise', '~> 4.2'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.11'
+gem 'bcrypt', '3.1.11', platforms: [:ruby, :x64_mingw]
 
 # Use Capistrano for deployment
 gem 'capistrano-rails', group: :development
-
-gem 'bootstrap', '~> 4.0.0'
-# Styling
+# Styling, sass supported.
+gem 'bootstrap-sass', '3.3.7'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
