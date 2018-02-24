@@ -7,4 +7,12 @@ module ApplicationHelper
       page_title + "|" + base_title
     end
   end
+
+  def welcomeLanguages()
+      languageArrays = ["Welcome.", "ようこそ", "환영"]
+      languageSelect = rand(3)
+      welcomeString = languageArrays[languageSelect]
+    return welcomeString
+  end
+  
 end
