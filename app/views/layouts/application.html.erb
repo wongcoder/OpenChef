@@ -3,12 +3,10 @@
   <head>
     <title><%= page_title(yield(:location)) %></title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <!-- I don't know why that is included...-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap built in for responsiveness -->
+    <!-- For responsiveness to screen sizes -->
   </head>
 
   <body>
@@ -18,9 +16,10 @@
         <%= value %>
     </div>
     <% end %>
+    <!-- I dont' know what flash is used for here -->
 
-    <%= link_to 'Login', new_user_session_path %>
-    I think this displays on every single page
+    <nav
+
     <!-- Use routes to put link to login on master layout -->
     <!-- we used the first column of the routes "new_user_session"
     that points to the URL "localhost:3000/users/sign_in"
