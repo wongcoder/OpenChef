@@ -18,26 +18,34 @@
     <% end %>
     <!-- I dont' know what flash is used for here -->
 
-    <nav class="navbar">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <%= link_to "Home", '#' %>
+            <a class="nav-link">
+              <%= link_to "Home", '#' %>
+            </a>
           </li>
           <li class="nav-item">
-            <%= link_to "Accounts", '#' %>
+            <a class="nav-link">
+              <%= link_to "Accounts", '#' %>
+            </a>
           </li>
           <li class="nav-item">
-            <%= link_to "Restaurants", '#' %>
+            <li class="nav-link">
+              <%= link_to "Restaurants", '#' %>
+            </li>
           </li>
           <li class="nav-item">
-            <%= link_to "Eat!", '#' %>
+            <li class="nav-link">
+              <%= link_to "Eat!", '#' %>
+            </li>
           </li>
         </ul>
-        <span class="navbar-text">Navbar text with an inline element test!</span>
+        <span class="navbar-text">Welcome to OpenChef!</span>
       </div>
     </nav>
 
