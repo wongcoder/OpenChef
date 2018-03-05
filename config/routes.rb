@@ -10,11 +10,11 @@ Rails.application.routes.draw do
 
   get 'static_pages/eat'
 
-  get '/about' to: 'static_pages#about'
+  get '/about', to: 'static_pages#about'
 
   root 'static_pages#home'
 
-  get '/restaurants/:id' to: #show'
+#  get '/restaurants/:id' to: #show'
   resources :restaurant
 
 #devise_for :users

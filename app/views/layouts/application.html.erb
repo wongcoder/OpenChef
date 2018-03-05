@@ -12,13 +12,34 @@
   <body>
     <% flash.each do |key, value| %>
     <div class="alert alert-<%= key %> alert-dismissable">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">× NANI</button>
         <%= value %>
     </div>
     <% end %>
     <!-- I dont' know what flash is used for here -->
 
-    <nav navbar="navigation"> </nav>
+    <nav class="navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <%= link_to "Home", '#' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Accounts", '#' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Restaurants", '#' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Eat!", '#' %>
+          </li>
+        </ul>
+        <span class="navbar-text">Navbar text with an inline element test!</span>
+      </div>
+    </nav>
 
     <!-- Use routes to put link to login on master layout -->
     <!-- we used the first column of the routes "new_user_session"

@@ -34,14 +34,16 @@ gem 'bcrypt', '3.1.11', platforms: [:ruby, :x64_mingw]
 # Use Capistrano for deployment
 gem 'capistrano-rails', group: :development
 # Styling, sass supported.
-gem 'bootstrap-sass', '3.3.7'
+gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+# Bootstrap dependency.
+gem 'jquery-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver'  
 end
 
 group :development do
