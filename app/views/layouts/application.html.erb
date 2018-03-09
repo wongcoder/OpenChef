@@ -3,7 +3,7 @@
   <head>
     <title><%= page_title(yield(:location)) %></title>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- For responsiveness to screen sizes -->
@@ -11,10 +11,10 @@
 
   <body>
     <% flash.each do |key, value| %>
-    <div class="alert alert-<%= key %> alert-dismissable">
-      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">× NANI</button>
+      <div class="alert alert-<%= key %> alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">× NANI</button>
         <%= value %>
-    </div>
+      </div>
     <% end %>
     <!-- I dont' know what flash is used for here -->
 
@@ -42,12 +42,9 @@
     </nav>
 
     <!-- Use routes to put link to login on master layout -->
-    <!-- we used the first column of the routes "new_user_session"
-    that points to the URL "localhost:3000/users/sign_in"
-    and that goes to the devise/sessions controller to "new" action -->
+    <!-- we used the first column of the routes "new_user_session" that points to the URL "localhost:3000/users/sign_in" and that goes to the devise/sessions controller to "new" action -->
 
-    <!-- <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p> -->
+    <!-- <p class="notice"><%= notice %></p> <p class="alert"><%= alert %></p> -->
 
     <%= yield %>
   </body>
