@@ -17,3 +17,21 @@
 /* For some odd reason... the documentation I'm reading doesn't seem to want to touch application.css... */
 
 @import "bootstrap";
+.container {
+  background-postion: relative;
+  background-size: cover;
+  background-image: url(cover.jpg);
+}
+
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.ml-1 {
+  margin-left: ($spacer * .25) !important;
+}
+
+.navbar {
+  margin-bottom: 200px;
+}
