@@ -17,8 +17,7 @@
 /* For some odd reason... the documentation I'm reading doesn't seem to want to touch application.css... */
 
 @import "bootstrap";
-.container {
-  background-postion: relative;
+html {
   background-size: cover;
   background-image: url(cover.jpg);
 }
