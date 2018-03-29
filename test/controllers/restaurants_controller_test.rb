@@ -5,5 +5,6 @@ class RestaurantsControllerTest < ActionDispatch::IntegrationTest
     get restaurants_new_url
     assert_response :success
   end
+  #test "should get a restaurant" do
 
 end

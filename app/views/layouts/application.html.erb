@@ -10,12 +10,7 @@
   </head>
 
   <body>
-    <% flash.each do |key, value| %>
-      <div class="alert alert-<%= key %> alert-dismissable">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">× NANI</button>
-        <%= value %>
-      </div>
-    <% end %>
+
     <!-- I dont' know what flash is used for here -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -25,22 +20,28 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <%= link_to "Home", '#', class: "nav-link" %>
+            <%= link_to "Home", home_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Accounts", '#', class: "nav-link" %>
+            <%= link_to "Accounts", edit_user_registration_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Restaurants", '#', class: "nav-link" %>
+            <%= link_to "Restaurants", restaurants_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Eat!", '#', class: "nav-link" %>
+            <%= link_to "Eat!", eat_path, class: "nav-link" %>
           </li>
         </ul>
-        <span class="navbar-text">Welcome to OpenChef!</span>
+        <span class="navbar-text"> OpenChef </span>
       </div>
     </nav>
 
+    <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %> alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <%= value %>
+      </div>
+    <% end %>
     <!-- Use routes to put link to login on master layout -->
     <!-- we used the first column of the routes "new_user_session" that points to the URL "localhost:3000/users/sign_in" and that goes to the devise/sessions controller to "new" action -->
 

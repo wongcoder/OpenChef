@@ -17,9 +17,18 @@
 /* For some odd reason... the documentation I'm reading doesn't seem to want to touch application.css... */
 
 @import "bootstrap";
-html {
-  background-size: cover;
-  background-image: url(cover.jpg);
+@media (min-width:768px) {
+  body {
+    background-image: asset-url("cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+} // Computers
+
+body { // mobile
+  background: asset-url("cover.jpg") no-repeat center;
+  min-height: 918px;
 }
 
 
@@ -31,6 +40,16 @@ html {
   margin-left: ($spacer * .25) !important;
 }
 
-.navbar {
-  margin-bottom: 200px;
+.h1 {
+  font-size: 300%;
+}
+
+.mainpage {
+  margin-top: 200px;
+  font-size: 150%;
+}
+
+.titletext {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }

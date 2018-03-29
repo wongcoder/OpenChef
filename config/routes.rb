@@ -1,20 +1,16 @@
 Rails.application.routes.draw do
 
-  get 'restaurants/new'
+  #get 'restaurants/new'
 
-  get 'static_pages/home'
+  get '/restaurants', to: 'static_pages#restaurants'
 
-  get 'static_pages/accounts'
-
-  get 'static_pages/restaurants'
-
-  get 'static_pages/eat'
+  get '/eat', to: 'static_pages#eat'
 
   get '/about', to: 'static_pages#about'
 
-  root 'static_pages#home'
+  root 'static_pages#home', as: 'home'
 
-#  get '/restaurants/:id' to: #show'
+  #get '/restaurants/:id' to: #show'
   resources :restaurant
 
 #devise_for :users

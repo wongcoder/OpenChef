@@ -3,17 +3,14 @@ titleMessage = welcomeLanguages()
 provide(:location, titleMessage)
 # Work on later
 %>
-  <div class="container">
+  <div class="container mainpage">
     <div class="row">
       <div class="col-md">
-      <div class="text-center">
+      <div class="text-center titletext">
         <h1>OpenChef</h1>
-        Welcome to OpenChef--a new platform for eating out.
+        Welcome to <i>OpenChef</i>--a new platform for eating out.
         <p>
           Want to try?
-        </p>
-        <p>
-          Sign in.
         </p>
         <p>
           <%= link_to "Sign In", new_user_registration_path, class: "btn btn-lg btn-primary" %>
