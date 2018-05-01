@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  
+
   get '/eat', to: 'static_pages#eat'
   get '/about', to: 'static_pages#about'
   root 'static_pages#home', as: 'home'
@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   # initialize resource
   resources :restaurant
 
-#devise_for :users
+  #devise_for :users
   devise_for :users #, controllers: { registrations: "registrations" }
   devise_scope :user do
     root to: "devise/registrations#edit"
