@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root 'static_pages#home', as: 'home'
 
   # initialize resource
-  resources :restaurant
+  resources :restaurants
 
   #devise_for :users
   devise_for :users #, controllers: { registrations: "registrations" }
