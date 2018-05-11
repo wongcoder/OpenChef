@@ -8,6 +8,6 @@
   end
 
   def new
-    @restaurant = Restaurant.new() #.new does the same
+    @restaurant = Restaurant.new #.new does the same
   end
 end
