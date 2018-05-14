@@ -13,12 +13,6 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
-//= require vue
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
-
-import Vue from 'vue'
-import Vuetify from 'vuetify'
-
-Vue.use(Vuetify)

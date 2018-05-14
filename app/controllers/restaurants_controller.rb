@@ -3,8 +3,7 @@
     # This is the important part
   end
   def show
-    @restauraunt = Restaurant.find(params[:id])
-    debugger
+    @restaurant = Restaurant.find(params[:id])
   end
 
   def new

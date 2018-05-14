@@ -1,7 +1,30 @@
-<% provide (:title, @restaurant.name) %>
-<h1>
-  <%=
-  @restaurant.name 
-  # front end for later
-  %>
-</h1>
+<% provide(:location, @restaurant.name) %>
+<body>
+  <div id="restauranthtml">
+    <v-app light>
+      <v-container>
+      <v-layout>
+        <v-flex lg3>
+          <v-card>
+            <v-card-media src="https://s3-media2.fl.yelpcdn.com/bphoto/Lgl1E7QKcyDoT7ETfyUZRg/o.jpg" height="150px"> </v-card-media>
+            <v-card-title primary-title="primary-title">
+              <div>
+                <h3 class="headline mb-0"><%= @restaurant.name %></h3>
+                <div><%= @restaurant.location %></div>
+              </div>
+            </v-card-title>
+            <v-card-actions>
+              <v-btn flat="flat" color="blue">Yelp!</v-btn>
+              <v-btn flat="flat" color="blue">Eat!</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-flex>
+      </v-layout>
+    </v-container>
+    </v-app>
+  </div>
+</body>
+
+<script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+<link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
