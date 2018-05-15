@@ -39,21 +39,25 @@ import Vuetify from 'vuetify'
 
 Vue.use(Vuetify)
 document.addEventListener('DOMContentLoaded', () => {
+
   const app = new Vue({
     el: '#restauranthtml',
     data: {
       message: "Can you say hello?"
     }
   })
+
+  const restform = new Vue({
+    el: "#new-restaurant-form",
+    data: {
+      message: "Vue works now!"
+    }
+  })
+  
 })
 
 
-const restform = new Vue({
-  el: "#new-restaurant-form",
-  data: {
-    message: "Vue works now!"
-  }
-})
+
 
 //
 //
