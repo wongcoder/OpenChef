@@ -56,9 +56,7 @@ const restform = new Vue({
   }
 })
 
-//
-//
-//
+
 // If the using turbolinks, install 'vue-turbolinks':
 //
 // yarn add 'vue-turbolinks'
