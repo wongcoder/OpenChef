@@ -40,21 +40,25 @@ import TurbolinksAdapter from 'vue-turbolinks'
 
 Vue.use(Vuetify)
 document.addEventListener('DOMContentLoaded', () => {
+
   const app = new Vue({
     el: '#restauranthtml',
     data: {
       message: "Can you say hello?"
     }
   })
+
+  const restform = new Vue({
+    el: "#new-restaurant-form",
+    data: {
+      message: "Vue works now!"
+    }
+  })
+  
 })
 
 
-const restform = new Vue({
-  el: "#new-restaurant-form",
-  data: {
-    message: "Vue works now!"
-  }
-})
+
 
 
 // If the using turbolinks, install 'vue-turbolinks':
