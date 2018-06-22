@@ -4,15 +4,19 @@
 <div id="new-restaurant-form">
   {{ message }}
 </div>
-<%= form_for @restaurant do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <%= form_for @restaurant do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
 
-  <%= f.label :location %>
-  <%= f.text_field :location %>
+      <%= f.label :location %>
+      <%= f.text_field :location %>
 
-  <%= f.label :contactPhone %>
-  <%= f.telephone_field :contactPhone %>
+      <%= f.label :contactPhone %>
+      <%= f.telephone_field :contactPhone %>
 
-  <%= f.submit "Do something", class: "btn btn-primary" %>
-<% end %>
+      <%= f.submit "Submit", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
