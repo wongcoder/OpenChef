@@ -39,7 +39,7 @@ import Vuetify from 'vuetify'
 import TurbolinksAdapter from 'vue-turbolinks'
 
 Vue.use(Vuetify)
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('turbolinks:load', () => {
 
   const app = new Vue({
     el: '#restauranthtml',
@@ -54,15 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
       message: "Vue works now!"
     }
   })
-  
+
 })
 
 
 
-
-//
-//
-//
 // If the using turbolinks, install 'vue-turbolinks':
 //
 // yarn add 'vue-turbolinks'
