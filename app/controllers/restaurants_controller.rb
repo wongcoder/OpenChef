@@ -15,6 +15,8 @@
     if @restaurant.save
       redirect_to @restaurant
     else
+      puts "Something went wrong."
+      render 'new' # Render the new page on routes
     end
 
   end

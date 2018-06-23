@@ -1,11 +1,20 @@
 Rails.application.routes.draw do
 
-  get '/eat', to: 'static_pages#eat'
+
+  get 'eat_queue/new'
+
+  get 'queue/new'
+
   get '/about', to: 'static_pages#about'
   root 'static_pages#home', as: 'home'
 
-  # initialize resource
+  # Initialize Resources
   resources :restaurants
+
+  # Matchmaking Queue
+  get '/eat', to: 'queue#new'
+  post '/eat', to: 'queue#create'
+  get '/cancel', to: 'queue#destroy'
 
   #devise_for :users
   devise_for :users #, controllers: { registrations: "registrations" }

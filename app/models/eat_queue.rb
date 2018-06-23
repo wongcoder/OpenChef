@@ -1,0 +1,2 @@
+class EatQueue < ApplicationRecord
+end
