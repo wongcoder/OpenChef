@@ -1,0 +1,2 @@
+class MatchLog < ApplicationRecord
+end

@@ -1,10 +1,5 @@
 Rails.application.routes.draw do
 
-
-  get 'eat_queue/new'
-
-  get 'queue/new'
-
   get '/about', to: 'static_pages#about'
   root 'static_pages#home', as: 'home'
 
@@ -12,8 +7,8 @@ Rails.application.routes.draw do
   resources :restaurants
 
   # Matchmaking Queue
-  get '/eat', to: 'queue#new'
-  post '/eat', to: 'queue#create'
+  get '/eat', to: 'eat_queue#new'
+  post '/eat', to: 'eat_queue#create'
   get '/cancel', to: 'queue#destroy'
 
   #devise_for :users

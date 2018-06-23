@@ -15,6 +15,10 @@ class EatQueueController < ApplicationController
   def destroy
   end
 
+  # User has finished dining, review time
+  def finished
+  end
+
 private
   def found_match
   end

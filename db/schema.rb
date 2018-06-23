@@ -10,11 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180623051316) do
+ActiveRecord::Schema.define(version: 20180623130430) do
 
   create_table "eat_queues", force: :cascade do |t|
     t.string "username"
     t.string "restaurantname"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "match_logs", force: :cascade do |t|
+    t.string "owner"
+    t.string "matchedwith"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
