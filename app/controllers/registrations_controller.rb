@@ -5,6 +5,3 @@ class RegistrationsController < Devise::RegistrationsController
     edit_user_registration(resource)
   end
 end
-
-# this whole thing is unused i think
-# DALE WHAT THE FUCK THIS IS THE REGISTRATIONS CONTROLLER

@@ -6,20 +6,21 @@ module EatQueueHelper
   end
 
   def check_queue?
-    if EatQueue.count() != 0 # A match has been found
-      @matchedUser = EatQueue.first().username
-      MatchLog.new(owner: @matchedUser, matchedwith: @user)
-      MatchLog.new(owner: @user, matchedwith: @matchedUser)
+    if EatQueue.count() != 0 # A match has been found, add them in
+      @matchedUser = EatQueue.first().userid
+      MatchLog.new(owner: @matchedUser, matchedwith: @user.id)
+      MatchLog.new(owner: @user.id, matchedwith: @matchedUser)
+      # Create a log, to see if user has had a queue.
+      # Send notification later
       queue_update
       EatQueue.destroy_all
     else
-      
+      EatQueue.new(username )
     return
   end
 
   def queue_update
     render 'new' # Implement a function that will check if MatchLog has this user in it.
-
   end
 
 end
