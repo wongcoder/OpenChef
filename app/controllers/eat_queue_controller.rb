@@ -7,6 +7,7 @@ class EatQueueController < ApplicationController
     else
       render 'new_user_session'
     end
+    if user_in_queue?
   end
 
   def create

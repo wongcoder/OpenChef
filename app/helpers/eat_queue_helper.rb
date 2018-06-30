@@ -15,7 +15,7 @@ module EatQueueHelper
       queue_update
       EatQueue.destroy_all
     else
-      EatQueue.new(username )
+      EatQueue.new(userid: @user.id)
     return
   end
 
