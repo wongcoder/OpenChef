@@ -8,6 +8,7 @@ class EatQueueController < ApplicationController
       render 'new_user_session'
     end
     if user_in_queue?
+
   end
 
   def create
@@ -29,6 +30,7 @@ class EatQueueController < ApplicationController
 
 private
   def found_match
+
   end
 
 end
