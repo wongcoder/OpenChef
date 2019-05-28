@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This was a really old Rails project that I attempted to get off the ground running using nothing but Rails tutorial. Overall, the application doesn't work as intended.
 
-Things you may want to cover:
+There were quite a bit of complications along the way, but the primary one was creating the queue system. I think a middle-man should have been created--otherwise, what would end up happening, is that a person would be matched up with a user without even getting a single notification. 
 
-* Ruby version
+The database had a few calls that would identify if another person was in the queue, and would set a database flag. This is incredibly slow, and should not be done on a production database. 
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
