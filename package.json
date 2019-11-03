@@ -2,14 +2,14 @@
   "name": "openChef",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.5",
+    "@rails/webpacker": "4.0.7",
     "vue": "^2.5.16",
-    "vue-loader": "14.2.2",
+    "vue-loader": "15.7.2",
     "vue-template-compiler": "^2.5.16",
     "vue-turbolinks": "^2.0.3",
-    "vuetify": "^1.0.17"
+    "vuetify": "^2.1.9"
   },
   "devDependencies": {
-    "webpack-dev-server": "3.1.11"
+    "webpack-dev-server": "3.9.0"
   }
 }
