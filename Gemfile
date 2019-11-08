@@ -32,7 +32,7 @@ gem 'devise', '~> 4.7'
 gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '3.1.11', platforms: [:ruby, :x64_mingw]
-gem 'loofah', '2.2.3'
+gem 'loofah', '2.3.1'
 # Use Capistrano for deployment
 gem 'capistrano-rails', group: :development
 # Styling, sass supported.
